@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Types of EV Chargers</title>
+
+    <link rel="stylesheet" href="styleweb.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Types of EV Chargers</h1>
+        <p>Learn About Different Charging Methods</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="chargers.html">Charger Types</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeButton">Dark Mode</button>
+    </header>
+
+    <main>
+
+        <section class="box">
+            <h2>AC Charger</h2>
+
+           
+            <p>
+                AC chargers are commonly used at homes.
+                They supply AC electricity, which the
+                vehicle converts into DC to charge its battery.
+                They generally take several hours.
+            </p>
+        </section>
+
+        <section class="box">
+            <h2>DC Charger</h2>
+
+           
+            <p>
+                DC chargers are commonly found at public
+                charging stations. They supply DC electricity
+                directly to the battery and can charge
+                much faster than AC chargers.
+            </p>
+        </section>
+
+        <section class="box">
+            <h2>AC vs DC Chargers</h2>
+
+            <ul>
+                <li>AC charging is generally slower.</li>
+                <li>DC charging is generally faster.</li>
+                <li>AC chargers are common for home charging.</li>
+                <li>DC chargers are common at public stations.</li>
+            </ul>
+        </section>
+
+        <!-- JavaScript Feature: Charging Calculator -->
+
+        <section class="box">
+            <h2>EV Charging Time Calculator</h2>
+
+            <p>
+                Calculate the estimated time required
+                to charge an electric vehicle.
+            </p>
+
+            <label>Battery Capacity (kWh)</label>
+            <br>
+
+            <input type="number" id="capacity"
+                   placeholder="Example: 60">
+
+            <br><br>
+
+            <label>Charger Power (kW)</label>
+            <br>
+
+            <input type="number" id="power"
+                   placeholder="Example: 7">
+
+            <br><br>
+
+            <button onclick="calculateTime()">
+                Calculate Time
+            </button>
+
+            <h3 id="result"></h3>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 EV Charging Information | College Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
